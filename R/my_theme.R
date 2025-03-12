@@ -9,5 +9,6 @@ my_theme <- function() {
         axis.text = element_text(face = "bold",size = 14),
         strip.background = element_rect(fill="red"),
         strip.text = element_text(colour="white"),
+        legend.position = "top"
         )
 }
