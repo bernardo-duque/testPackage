@@ -10,5 +10,5 @@ my_theme <- function() {
         strip.background = element_rect(fill="red"),
         strip.text = element_text(colour="white"),
         legend.position = "top"
-        )
+        ) + theme_bw() + scale_color_manual(values = c("#154c79"))
 }
