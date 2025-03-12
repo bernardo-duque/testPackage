@@ -6,6 +6,6 @@
 #' @return Vector beta from the regression y = beta*x + e.
 #' @export
 estimate_beta <- function(y, X) {
-  beta <- (t(X)%*%X)^(-1)%*%t(X)%*%y
+  beta <- solve(t(X) %*% X) %*% t(X) %*% y
   return(beta)
 }
